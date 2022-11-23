@@ -46,7 +46,13 @@ export function averageNumbers(array){
 
 //------------EJERCICIO Nº5--------------// 
 
-export function averageWordLength(){}
+export function averageWordLength(array){
+    if(array.length == 0){
+        return undefined;
+    }
+    let averageWord = array.join('').length / array.length;
+    return averageWord;
+}
 
 export function uniquifyArray(){}
 export function doesWordExist(){}
